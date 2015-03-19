@@ -3,7 +3,8 @@
 require 'rubygems'
 require 'twilio-ruby'
 
-# connect to Twilio API using account SID and auth token found in Twilio dashboard
+# connect to Twilio API using account SID and auth token found 
+# in Twilio dashboard
 
 account_sid = "your account_sid"
 auth_token = "your auth_token"
