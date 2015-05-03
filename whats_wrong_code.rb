@@ -2,73 +2,74 @@
 
 class Ferret
  
-def set_name= (ferret_name)
-	@name = ferret_name
-end
+	def set_name= (ferret_name)
+		@name = ferret_name
+	end
  
-def get_name
-	return @name
-end
+	def get_name
+		return @name
+	end
  
-def set_owner=(owner_name)
-	@owner_name = owner_name
-end
+	def set_owner=(owner_name)
+		@owner_name = owner_name
+	end
  
-def get_owner
-	return @owner_name
-end
+	def get_owner
+		return @owner_name
+	end
  
-def squeal
-	return "squeeeeee"
-end
+	def squeal
+		return "squeeeeee"
+	end
  
 end
  
 class Chincilla
  
-def set_name=(chinchilla_name)
-	@name = chinchilla_name
-end
+	def set_name=(chinchilla_name)
+		@chinchilla_name = chinchilla_name
+	end
 
-def get_name
-	return @name
-end
-	
-def set_owner=(owner_name)
-	@owner_name = owner_name
-end
+	def get_name
+		return @chinchilla_name
+	end
  
-def get_owner
-	return @owner_name
-end
+	def set_owner=(owner_name)
+		@owner_name = owner_name
+	end
  
-def squeek
-	return "eeeep"
-end
+	def get_owner
+		return @owner_name
+	end
+ 
+	def squeek
+		return "eeeep"
+	end
  
 end
  
 class Parrot
  
-def set_name=(parrot_name)
-	@name = parrot_name
-end
+	def set_name=(parrot_name)
+		@parrot_name = parrot_name
+	end
  
-def get_name
-	return @name
-end
+	def get_name
+		return @parrot_name
+	end
  
-def set_owner=(owner_name)
-	@owner_name = owner_name
-end
+	def set_owner=(owner_name)
+		@owner_name = owner_name
+	end
  
-def get_owner
-	return @owner_name
-end
+	def get_owner
+		return @owner_name
+	end
 
-def tweet
-	return "tweet"
-end 
+	def tweet
+		return "tweet"
+	end
+ 
 end
  
 my_ferret = Ferret.new
@@ -83,8 +84,8 @@ my_chincilla = Chincilla.new
 my_chincilla.set_name= "Dali"
 chincilla_name = my_chincilla.get_name
  
-puts "#{ferret_name} says #{my_ferret.squeal},
-#{parrot_name} says #{my_parrot.tweet},
+puts "#{ferret_name} says #{my_ferret.squeal}, 
+#{parrot_name} says #{my_parrot.tweet}, 
 and #{chincilla_name} says #{my_chincilla.squeek}."
  
 puts my_ferret.inspect
